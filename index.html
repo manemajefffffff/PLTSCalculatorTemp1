@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Form Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Input</legend>
+        <!--
+                    <label for="kW">kW</label>
+                    <input type="radio" id="kW" name="wattUnit" value="kW">
+        
+                    <label for="MW">MW</label>
+                    <input type="radio" id="MW" name="wattUnit" value="MW">
+                -->
+        <label for="wattVar">Watt:</label>
+        <input type="text" id="wattVar" name="wattVar" placeholder="100" required>
+
+        <label for="wattUnit">Watt Unit:</label>
+        <select name="wattUnit" id="wattUnit" required>
+            <option value="kW">kW</option>
+            <option value="MW">MW</option>
+        </select>
+        <br><br>
+        <button type="submit" id="buttonSubmit">Submit</button>
+        <script src="index.js"></script>
+    </fieldset><br>
+
+
+
+    <label id="wattInputText"></label><br><br>
+
+
+
+<!--     <table id="tableResult">
+        <tr>
+            <th>No.</th>
+            <th>Deskripsi</th>
+            <th>Jumlah</th>
+            <th>Satuan</th>
+        </tr>
+        <tr id="trA">
+            <td>I</td>
+            <td>PENGADAAN MATERIAL SISTEM PV</td>
+        </tr>
+        <tr id="trB">
+                <td>II</td>
+                <td>PENGADAAN MATERIAL INVERTER</td>
+        </tr>
+        <tr>
+                <td>III</td>
+                <td>PENGADAAN MATERIAL BATTERY ENERGY STRORAGE SYSTEM</td>
+        </tr>
+        <tr id="trC">
+                <td>IV</td>
+                <td>PENGADAAN MATERIAL SYSTEM MONITORING</td>
+        </tr>
+        <tr id="trD">
+                <td>V</td>
+                <td>PENGADAAN MATERIAL PANEL AC COMBINER</td>
+        </tr>
+        <tr id="trE">
+                <td>VI</td>
+                <td>PENGADAAN MATERIAL GROUNDING</td>
+        </tr>
+        <tr id="trF">
+                <td>VII</td>
+                <td>PENGADAAN MATERIAL PENANGKAL PETIR</td>
+        </tr>
+        <tr id="trG">
+                <td>VIII</td>
+                <td>PEKERJAAN JASA</td>
+        </tr>
+    </table> -->
+
+    <!-- 10kWp Labels -->
+    <label id="subheadingA"></label><br>
+    <label id="aMats0"></label>&nbsp;&nbsp;&nbsp;<label id="a0"></label><br>
+    <label id="aMats1"></label>&nbsp;&nbsp;&nbsp;<label id="a1"></label><br>
+    <label id="aMats2"></label>&nbsp;&nbsp;&nbsp;<label id="a2"></label><br>
+    <label id="aMats3"></label>&nbsp;&nbsp;&nbsp;<label id="a3"></label><br>
+    <label id="aMats4"></label>&nbsp;&nbsp;&nbsp;<label id="a4"></label><br>
+    <label id="aMats5"></label>&nbsp;&nbsp;&nbsp;<label id="a5"></label><br>
+    <label id="aMats6"></label>&nbsp;&nbsp;&nbsp;<label id="a6"></label><br>
+    <label id="aMats7"></label>&nbsp;&nbsp;&nbsp;<label id="a7"></label><br>
+    <label id="aMats8"></label>&nbsp;&nbsp;&nbsp;<label id="a8"></label><br>
+    <label id="aMats9"></label>&nbsp;&nbsp;&nbsp;<label id="a9"></label><br>
+    <label id="aMats10"></label>&nbsp;&nbsp;&nbsp;<label id="a10"></label><br>
+    <label id="aMats11"></label>&nbsp;&nbsp;&nbsp;<label id="a11"></label><br>
+    <label id="aMats12"></label>&nbsp;&nbsp;&nbsp;<label id="a12"></label><br><br>
+
+    <label id="subheadingB"></label><br>
+    <label id="bMats0"></label>&nbsp;&nbsp;&nbsp;<label id="b0"></label><br>
+    <label id="bMats1"></label>&nbsp;&nbsp;&nbsp;<label id="b1"></label><br>
+    <label id="bMats2"></label>&nbsp;&nbsp;&nbsp;<label id="b2"></label><br>
+    <label id="bMats3"></label>&nbsp;&nbsp;&nbsp;<label id="b3"></label><br>
+    <label id="bMats4"></label>&nbsp;&nbsp;&nbsp;<label id="b4"></label><br>
+    <label id="bMats5"></label>&nbsp;&nbsp;&nbsp;<label id="b5"></label><br>
+    <label id="bMats6"></label>&nbsp;&nbsp;&nbsp;<label id="b6"></label><br>
+    <label id="bMats7"></label>&nbsp;&nbsp;&nbsp;<label id="b7"></label><br>
+    <label id="bMats8"></label>&nbsp;&nbsp;&nbsp;<label id="b8"></label><br>
+    <label id="bMats9"></label>&nbsp;&nbsp;&nbsp;<label id="b9"></label><br>
+    <label id="bMats10"></label>&nbsp;&nbsp;&nbsp;<label id="b10"></label><br>
+    <label id="bMats11"></label>&nbsp;&nbsp;&nbsp;<label id="b11"></label><br><br>
+
+    <label id="subheadingNA"></label><br>
+    <label id="textNA"></label><br><br>
+
+    <label id="subheadingC"></label><br>
+    <label id="cMats0"></label>&nbsp;&nbsp;&nbsp;<label id="c0"></label><br>
+    <label id="cMats1"></label>&nbsp;&nbsp;&nbsp;<label id="c1"></label><br>
+    <label id="cMats2"></label>&nbsp;&nbsp;&nbsp;<label id="c2"></label><br>
+    <label id="cMats3"></label>&nbsp;&nbsp;&nbsp;<label id="c3"></label><br>
+    <label id="cMats4"></label>&nbsp;&nbsp;&nbsp;<label id="c4"></label><br>
+    <label id="cMats5"></label>&nbsp;&nbsp;&nbsp;<label id="c5"></label><br>
+    <label id="cMats6"></label>&nbsp;&nbsp;&nbsp;<label id="c6"></label><br>
+    <label id="cMats7"></label>&nbsp;&nbsp;&nbsp;<label id="c7"></label><br><br>
+
+    <label id="subheadingD"></label><br>
+    <label id="dMats0"></label>&nbsp;&nbsp;&nbsp;<label id="d0"></label><br>
+    <label id="dMats1"></label>&nbsp;&nbsp;&nbsp;<label id="d1"></label><br>
+    <label id="dMats2"></label>&nbsp;&nbsp;&nbsp;<label id="d2"></label><br>
+    <label id="dMats3"></label>&nbsp;&nbsp;&nbsp;<label id="d3"></label><br>
+    <label id="dMats4"></label>&nbsp;&nbsp;&nbsp;<label id="d4"></label><br>
+    <label id="dMats5"></label>&nbsp;&nbsp;&nbsp;<label id="d5"></label><br>
+    <label id="dMats6"></label>&nbsp;&nbsp;&nbsp;<label id="d6"></label><br>
+    <label id="dMats7"></label>&nbsp;&nbsp;&nbsp;<label id="d7"></label><br><br>
+
+    <label id="subheadingE"></label><br>
+    <label id="eMats0"></label>&nbsp;&nbsp;&nbsp;<label id="e0"></label><br>
+    <label id="eMats1"></label>&nbsp;&nbsp;&nbsp;<label id="e1"></label><br>
+    <label id="eMats2"></label>&nbsp;&nbsp;&nbsp;<label id="e2"></label><br>
+    <label id="eMats3"></label>&nbsp;&nbsp;&nbsp;<label id="e3"></label><br>
+    <label id="eMats4"></label>&nbsp;&nbsp;&nbsp;<label id="e4"></label><br><br>
+
+    <label id="subheadingF"></label><br>
+    <label id="fMats0"></label>&nbsp;&nbsp;&nbsp;<label id="f0"></label><br>
+    <label id="fMats1"></label>&nbsp;&nbsp;&nbsp;<label id="f1"></label><br>
+    <label id="fMats2"></label>&nbsp;&nbsp;&nbsp;<label id="f2"></label><br>
+    <label id="fMats3"></label>&nbsp;&nbsp;&nbsp;<label id="f3"></label><br>
+    <label id="fMats4"></label>&nbsp;&nbsp;&nbsp;<label id="f4"></label><br>
+    <label id="fMats5"></label>&nbsp;&nbsp;&nbsp;<label id="f5"></label><br>
+    <label id="fMats6"></label>&nbsp;&nbsp;&nbsp;<label id="f6"></label><br><br>
+
+    <label id="subheadingG"></label><br>
+    <label id="gMats0"></label>&nbsp;&nbsp;&nbsp;<label id="g0"></label><br>
+    <label id="gMats1"></label>&nbsp;&nbsp;&nbsp;<label id="g1"></label><br>
+    <label id="gMats2"></label>&nbsp;&nbsp;&nbsp;<label id="g2"></label><br><br>
+
+</body>
+
+</html>
